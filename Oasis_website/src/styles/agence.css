@@ -1,0 +1,615 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+  * header *
+  **/
+.header {         
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #ff880049;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.oasis-white {
+  visibility: hidden;
+  opacity: 0;
+ }
+ 
+ .oasis-orange {
+   visibility: visible;
+   opacity: 1;
+  }
+
+ .scrolling {
+  transition: background-color 0.1s ease;
+  background-color: white !important;
+  z-index: 10;
+}
+
+.scrolling .oasis-orange {
+  display: none;
+}
+
+.scrolling .oasis-white {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1.5s linear
+}
+
+.scrolling .navbar .tabs a:hover {
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #e87c0194;
+  border-bottom-width: 2px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .sidenav {
+  display: none;
+}
+
+.navbar .sidenav .burger {
+  display: none;
+}
+
+.navbar .sidenav .menu {
+  display: none;
+}
+
+.navbar .material-symbols-outlined {
+  display: none;
+}
+
+.navbar a {
+  cursor: pointer;
+  margin-left: 2em;
+  text-decoration: none;
+}
+
+
+.navbar a img {
+  height: 90px;
+  margin-left: 25px;
+}
+
+.navbar .tabs {
+  padding-top: 35px;
+  padding-right: 40px;
+} 
+
+.navbar .tabs a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 30px;
+}
+
+.navbar .tabs a:hover {
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #EB5447;
+  border-bottom-width: 2px;
+}
+
+body {
+ background-color:#f8f8f8;
+ position: relative;
+}
+
+.container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #ff6600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px; 
+}
+.presentation {
+  margin-top: 5em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.history {
+  margin-top: 5em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.history .image {
+float: right;
+margin-top: -30px;
+}
+
+.history .image img {
+  height: 500px;
+}
+
+.history p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 50%;
+}
+
+/**
+  * Stack Technique *
+**/
+.stack {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #696969;
+  font-weight: 500;
+}
+
+.stack .elements {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  margin-bottom: 30px;
+}
+  
+
+.stack .elements img {
+  flex: 1 0 15%; /* explanation below */
+  margin: 50px 5px;
+  height: 50px;
+}
+
+.partenaires {
+  margin-bottom: 50px;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.partenaires .elements {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  margin-left: 20px;
+}
+  
+
+.partenaires .elements img {
+  flex: 1 0 5%; /* explanation below */
+  margin: 20px 5px;
+  height: 50px;
+}
+
+
+/**
+  * Nous contacter *
+  **/
+  .Contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    position: relative;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-bottom: 4em;
+    margin-top: 80px;
+  }
+
+.Contact h4 {
+  margin-top: 40px;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
+
+ .Contact .idea {
+  display: flex;
+  flex-direction: column;
+} 
+
+.Contact .idea .text .button {
+  margin-top: 12em;
+  bottom: 2em;
+  background-color: #eb5547d9;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+}
+
+.Contact p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-top: 26px;
+  width: 75%;
+  /* text-align: center; */
+}
+
+.Contact .image img {
+  height: 500px;
+  width: 500px;
+}
+
+/**
+  * Footer *
+  **/
+  footer {
+    background-color: #ffdabe;
+  
+  }
+  
+  footer  .description {
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    padding-top: 4em;
+    padding-bottom: 80px;
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer .description .content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 4em;
+  }
+
+  footer .description .rights {
+    display: none;
+  }
+  
+  footer .agency {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  footer .agency .title a {
+    color: #ec4b3d;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 33px;
+  }
+
+  footer .agency .title img {
+    cursor: pointer;
+    height: 90px;
+    margin-top: -14px;
+  }
+  
+  footer .agency .right .copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    line-height: 25px;
+  }
+  
+  footer .agency .right .legales {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  footer .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  footer .contact .title span {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  footer .contact .adresse {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  
+  footer .contact .mail {
+    margin-top: 100px;
+  }
+  
+  footer .propos {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+  }
+  
+  footer .propos .title {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  footer .propos .list {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .propos .list a {
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer .propos .list a:hover {
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+  }
+  
+
+
+@media only screen and (max-width: 990px) {
+  .header {
+    height: 64px;
+  }
+
+  .navbar .tabs {
+    display: none;
+  }
+
+  .navbar .sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: white;
+    transition: left 0.5s ease;
+    overflow-y: hidden;
+  }
+
+  .navbar .sidenav .burger{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    height: 64px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  }
+
+  .navbar .sidenav .burger .close{
+    font-size: 35px;
+    margin-top: 7px;
+    text-decoration: none;
+    color: #ff5245;
+  }
+
+  .navbar .material-symbols-outlined {
+    display: block;
+    margin-top: 9px;
+    font-size: 45px;
+    margin-right: 25px;
+    color: #ff5245;
+  }
+
+
+  .navbar .sidenav .menu{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .navbar .sidenav .menu a {
+    text-decoration: none;  
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: black;
+  }
+
+
+  .navbar a img {
+    margin-left: 0;
+    height: 64px;
+  }
+
+  .scrolling {
+    padding-left: 0em;
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-left: O;
+  }
+
+
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  .container .presentation {
+    margin-top: 50px;
+  }
+
+  .container .history {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .container .history p {
+    width: 100%;
+  }
+
+  .container .history .image {
+    display: none;
+  }
+
+  .stack {
+    margin-top: 7em;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-bottom: 0px;
+  }
+
+  .stack h3 {
+    font-size: 18px;
+  }
+
+  .stack .elements {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%; 
+    overflow-x: scroll;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .stack .elements img {
+    flex: 1 0 20%;
+  }
+
+  .partenaires {
+    margin-top: 3em;
+    margin-left: 0;
+    margin-right: 2em;
+  }
+
+  .partenaires h3 {
+    font-size: 18px;
+  }
+
+  .partenaires .elements {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%; 
+    overflow-x: scroll;
+    margin-top: 25px;
+    margin-bottom: 0;
+  } 
+
+  .partenaires .elements img {
+    flex: 1 0 20%;
+  }
+  
+
+  .Contact {
+    margin-top: 3em;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+  }
+    
+  .Contact h4 {
+  display: none;
+  }
+
+  .Contact p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .Contact .image {
+    display: none;
+  }
+
+  .Contact .idea .text .button {
+    margin-top: 50px;
+    bottom: 0; 
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+  }
+
+  footer .description {
+    padding-top: 1em;
+    height: auto;
+  }
+
+  footer .description .content {
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  footer .description .content .agency .right {
+    display: none;
+  }
+
+  footer .description .content .contact .mail{
+    margin-top: 0;
+  }
+
+  footer .description .content .rights {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .rights .copyright {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .rights .legales {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+
+
+  footer .propos  {
+    margin-top: 20px;
+}
+
+  footer .propos .list a {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+

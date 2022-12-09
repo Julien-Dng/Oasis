@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+  * header *
+  **/
+.header {         
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+ .scrolling {
+  z-index: 10;
+}
+
+.scrolling .navbar .tabs a:hover {
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #e87c0194;
+  border-bottom-width: 2px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .sidenav {
+  display: none;
+}
+
+.navbar .sidenav .burger {
+  display: none;
+}
+
+.navbar .sidenav .menu {
+  display: none;
+}
+
+.navbar .material-symbols-outlined {
+  display: none;
+}
+
+.navbar a {
+  cursor: pointer;
+  margin-left: 2em;
+  text-decoration: none;
+}
+
+
+.navbar a img {
+  height: 90px;
+  margin-left: 25px;
+}
+
+.navbar .tabs {
+  padding-top: 35px;
+  padding-right: 40px;
+} 
+
+.navbar .tabs a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 30px;
+}
+
+.navbar .tabs a:hover {
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #EB5447;
+  border-bottom-width: 2px;
+}
+
+body {
+  background-color:#f8f8f8;
+}
+
+.container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 150px;
+  max-width: 1340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: 600;
+  color: #ff6600;
+  font-size: 32px;
+}
+
+.container .text {
+ margin-top: 66px;
+ font-size: 18px;
+ font-weight: bolder;
+}
+
+.presentation {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.contact {
+  margin-top: 24px;
+}
+
+.contact .mail {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .mail .material-symbols-outlined {
+  font-size: 24px;
+  margin-left: 0;
+}
+
+.contact .mail span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.location {
+  display: flex;
+  margin-top: 32px;
+}
+
+.location .material-symbols-outlined {
+  font-size: 24px;
+  margin-left: 0;
+}
+
+.location span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.presentation .image {
+  width: 50%;
+  margin-right: 4em;
+}
+
+.presentation .image img {
+  width: 100%
+}
+
+/**
+  * Footer *
+  **/
+  footer {
+    background-color: #ffdabe;
+  
+  }
+  
+  footer  .description {
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    padding-top: 4em;
+    padding-bottom: 80px;
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .description .rights {
+    display: none;
+  }
+  
+  footer .description .content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 4em;
+  }
+  
+  footer .agency {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  footer .agency .title a {
+    color: #ec4b3d;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 33px;
+  }
+  
+  footer .agency .title img {
+    cursor: pointer;
+    height: 90px;
+    margin-top: -14px;
+  }
+
+  footer .agency .right .copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    line-height: 25px;
+  }
+  
+  footer .agency .right .legales {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  footer .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  footer .contact .title span {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  footer .contact .adresse {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  
+  footer .contact .mail {
+    margin-top: 100px;
+  }
+  
+  footer .propos {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+  }
+  
+  footer .propos .title {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  footer .propos .list {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .propos .list a {
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer .propos .list a:hover {
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+  }
+  
+
+  @media only screen and (max-width: 990px) {
+    .header {
+      height: 64px;
+    }
+
+    .navbar .tabs {
+      display: none;
+    }
+
+    .navbar .sidenav {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      background-color: white;
+      transition: left 0.5s ease;
+      overflow-y: hidden;
+    }
+  
+    .navbar .sidenav .burger{
+      display: flex;
+      justify-content: space-between;
+      padding-right: 30px;
+      height: 64px;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    }
+  
+    .navbar .sidenav .burger .close{
+      font-size: 35px;
+      margin-top: 7px;
+      text-decoration: none;
+      color: #ff5245;
+    }
+  
+    .navbar .material-symbols-outlined {
+      display: block;
+      margin-top: 9px;
+      font-size: 45px;
+      margin-right: 25px;
+      color: #ff5245;
+    }
+  
+  
+    .navbar .sidenav .menu{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .navbar .sidenav .menu a {
+      text-decoration: none;  
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      color: black;
+    }
+  
+  
+    .navbar a img {
+      margin-left: 0;
+      height: 64px;
+    }
+  
+    .scrolling {
+      padding-left: 0em;
+    }
+  
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin-left: O;
+    }
+  
+  
+    h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .container {
+      margin-top: 64px;
+    }
+
+    .container .image {
+      display: none;
+    }
+
+    .container .text {
+      font-size: 16px;
+      margin-top: 30px;
+    }
+
+    .container .presentation {
+      margin-left: 2em;
+      margin-top: 50px;
+    }
+    
+    .contact .mail .material-symbols-outlined {
+      font-size: 20px;
+    }
+    
+    .contact .mail span {
+      font-size: 14px;
+    }
+        
+    .location .material-symbols-outlined {
+      font-size: 20px;
+    }
+    
+    .location span {
+      font-size: 14px;
+    }
+
+    footer .description {
+      padding-top: 1em;
+      height: auto;
+    }
+  
+    footer .description .content {
+      flex-direction: column;
+      margin-left: 2em;
+    }
+  
+    footer .description .content .agency .right {
+      display: none;
+    }
+  
+    footer .description .content .contact .mail{
+      margin-top: 0;
+    }
+  
+    footer .description .content .rights {
+      display: block;
+      margin-top: 30px;
+    }
+  
+    .rights .copyright {
+      font-size: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .rights .legales {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+    }
+  
+  
+    footer .propos  {
+      margin-top: 20px;
+  }
+  
+    footer .propos .list a {
+      margin-bottom: 20px;
+  
+    }
+  }
+
+
+
+
