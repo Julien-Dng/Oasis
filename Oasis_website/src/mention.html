@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="./styles/mention.css">
+    <script src="index.js"></script>
+    
+    <title>Oasis Web Agency</title>
+  <body> 
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html">
+          <img class = "oasis-orange" src="assets/oasis-orange.png" alt="oasis">
+          <img class = "oasis-white" src="assets/oasis-white.png" alt="oasis">
+        </a>
+        </div>
+        <div class="tabs">
+          <a href="agence.html">Agence</a>
+          <a href="references.html">Références</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div id="myLinks" class="sidenav">
+          <div class="burger">
+            <a href="index.html">
+              <img class = "oasis-menu" src="assets/oasis-white.png" alt="oasis">
+            </a>
+            <a id="closeBtn" class="close" onclick="closeMenuFunction()">&times;</a>
+          </div>
+          <div class="menu">
+            <a href="agence.html">Agence</a>
+            <a href="references.html">Références</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <span class="material-symbols-outlined" onclick="myMenuFunction()">
+          menu
+        </span>
+        <script>
+          function myMenuFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+
+          function closeMenuFunction() {
+          var x = document.getElementById("myLinks");
+            x.style.display = "none";
+        }
+          </script>
+      </nav>
+    </header>
+    <script>
+      window.addEventListener('scroll',(e)=>{
+        const nav = document.querySelector('.header');
+        if(window.pageYOffset>0){
+          nav.classList.add("scrolling");
+        } else {
+          nav.classList.remove("scrolling");
+        }
+      });
+    </script>
+  </head>
+    <div class="container">
+      <div class="content">
+        <h1>Mentions légales</h1>
+        <p>Site édité par OASIS WEB AGENCY dont le siège social est situé au 15 rue des halles 75001 - PARIS</p></br>
+        <p>Immatriculée au Registre du Commerce et des Sociétés de Paris</p></br>
+        <p>Nº Siret: 91287709900016</p></br>
+        <h2>Données personnelles et vie privée</h2>
+        <p>OASIS WEB AGENCY respecte votre vie privée.</p></br>
+        <p>Notre politique de confidentialité des documents adhère aux normes de l’industrie pour la protection de vos renseignements personnels. Notre objectif principal lors de la collecte de vos informations est de vous fournir une expérience efficace et personnalisée.</p></br>
+        <p>OASIS WEB AGENCY ne partagera vos informations, ou ne cédera vos informations à une tierce partie non affiliée à ou non détenue par OASIS WEB AGENCY, sauf tel que permis par la loi.</p></br>
+        <p>OASIS WEB AGENCY enverra des informations personnellement identifiables à votre sujet à d’autres sociétés ou personnes lorsque :
+        </p><br>
+        <p>• Nous avons besoin de partager votre information pour vous fournir les produits ou services ;</p>
+        <p>• Nous avons besoin d’envoyer l’information à des entreprises qui travaillent pour le compte de OASIS WEB AGENCY afin de vous fournir un produit ou un service.</p><br>
+  
+  
+        <p>Transitions d’affaires</p><br>    
+        <p>Dans le cas où OASIS WEB AGENCY passe par une transition d’affaires, comme une fusion, d’acquisition par une autre société, ou la vente d’une partie de ses actifs, les informations personnelles de nos clients peuvent faire partie des actifs transférés. Les clients seront informés par un avis bien visible sur notre site avant un changement de propriété ou le contrôle de leurs renseignements personnels.
+        </p><br>  
+  
+        <h2>Droits d’auteur</h2>
+        <p>Utilisation des informations du site et droits d’auteur.
+        </p><br>
+        <p>L’utilisation de tout document provenant du site oasiswebagency.com n’est autorisée qu’à titre d’information pour un usage privé. Toute utilisation qui pourrait être effectuée à d’autres fins est expressément interdite.
+        </p><br>
+        <p>OASIS WEB AGENCY s’efforce de vérifier au mieux de ses capacités, l’exactitude des informations diffusées sur ce site, dont elle se réserve le droit de corriger, à tout moment et sans préavis, le contenu.
+        </p><br>
+        <p>De plus, il appartient à chaque visiteur de vérifier nos informations par d’autres moyens.
+        </p><br>
+        <p>Par conséquent, OASIS WEB AGENCY décline toute responsabilité : pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site et plus généralement pour tous dommages, directs ou indirects, qu’elles qu’en soient les causes, origines, nature ou conséquences, provoqués à raison de l’accès de quiconque au site ou de l’impossibilité d’y accéder, de même que l’utilisation du site et/ou du crédit accordé à une quelconque information provenant directement ou indirectement de ce dernier.
+        </p></br>
+        <p>Les droits de propriété intellectuelle sur les documents contenus dans le site et chacun des éléments créés pour ce site sont la propriété exclusive de OASIS WEB AGENCY ou de ses partenaires. La reproduction de tout document publié sur le site est seulement autorisée aux fins exclusives d’informations pour un usage personnel et privé, toute reproduction et toute utilisation de copies réalisées à d’autres fins étant expressément interdites.
+        </p><br>
+  
+        <h2>Marques et liens</h2>
+        <p>Toutes les marques citées dans ce site appartiennent à leurs compagnies respectives. Tous les produits, logos, et images cités dans les pages de ce site sont la propriété de leur marque respective. Les photographies reproduisant les produits ne sont pas contractuelles.
+        </p><br>
+        <p>Ce site peut contenir des liens vers et des portions d’autres sites.
+        </p><br>
+        <p>OASIS WEB AGENCY n’est pas responsable des pratiques de confidentialité ou du contenu de ces autres sites. Lorsque vous quittez notre site ou allez sur une partie du site d’un tiers par le biais de notre site, nous vous encourageons à lire les mentions légales de chacun de ces sites.
+        </p><br>
+        <p>La présente déclaration s’applique uniquement aux informations collectées par OASIS WEB AGENCY.
+        </p><br>
+        <h2>Application de la loi française</h2>
+        <p>Le non-respect des dispositions ci-dessus expose le contrevenant à des poursuites et à des sanctions pénales. Le présent document est régi et interprété selon le droit Français et relève de la compétence exclusive des Tribunaux Français.
+        </p><br>
+        <p>Si l’une des dispositions du présent texte s’avérait nulle, non valide ou sans effet juridique, toutes les autres dispositions demeureraient applicables.
+        </p><br>
+        <h2>Cookies de statistiques Google Analytics</h2>
+        <p>Ces cookies permettent d’établir des statistiques de fréquentation de notre site et de détecter des problèmes de navigation afin de suivre et d’améliorer la qualité de nos services.
+        </p><br>
+  
+        <h2>Coordonnées</h2>
+        <p>Pour toute question concernant le présent document, vous êtes prié de nous contacter à l’adresse suivante : contact@oasiswebagency.com
+        </p><br>
+        </p>
+      </div>
+    </div>         
+  </body>
+  <footer class="footer">
+    <div class="description">
+      <div class="content">
+        <div class="agency">
+          <div class="title">
+            <a href="index.html">
+              <img class = "oasis-orange" src="assets/oasis-orange.png" alt="oasis">
+            </a>
+          </div>
+          <div class="right">
+            <span class="copyright">Copyright © 2022</span></br>
+            <a class="legales" href="mention.html">Mentions légales</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="title">
+            <span>Contact</a>
+          </div>
+          <div class="adresse">
+            15 rue des Halles </br>
+            75001 PARIS
+          </div>
+          <div class="mail">contact@oasiswebagency.com</div>
+        </div>
+        <div class="propos">
+          <div class="title">À propos</div>
+          <div class="list">
+            <a class="agence" href="agence.html">Agence</a>
+            <a class="references" href="references.html">Références</a>
+            <a class="coordonnees" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="rights">
+          <span class="copyright">Copyright © 2022</span></br>
+          <a class="legales" href="mention.html">Mentions légales</a>
+        </div>
+      </div>
+      <div class="social"></div>
+    </div>
+  </footer>
+</html>
+

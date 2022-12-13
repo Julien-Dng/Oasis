@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Chela+One&family=Limelight&family=Rubik+Dirt&family=Rubik+Maze&family=Seymour+One&family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="index.js"></script>
+    <style>
+      #more-design {display: none;}
+      #more-dev {display: none;}
+      #more-strategy {display: none;}
+      </style>
+
+
+    <title>Oasis Web Agency</title>
+  </head>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html">
+        <img class = "oasis-orange" src="assets/oasis-orange.png" alt="oasis">
+        <img class = "oasis-white" src="assets/oasis-white.png" alt="oasis">
+      </a>
+      </div>
+      <div class="tabs">
+        <a href="agence.html">Agence</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="myLinks" class="sidenav">
+        <div class="burger">
+          <a href="index.html">
+            <img class = "oasis-menu" src="assets/oasis-white.png" alt="oasis">
+          </a>
+          <a id="closeBtn" class="close" onclick="closeMenuFunction()">&times;</a>
+        </div>
+        <div class="menu">
+          <a href="agence.html">Agence</a>
+          <a href="references.html">Références</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <span class="material-symbols-outlined" onclick="myMenuFunction()">
+        menu
+      </span>
+      <script>
+        function myMenuFunction() {
+          var x = document.getElementById("myLinks");
+           x.style.display = "block";
+        }
+
+        function closeMenuFunction() {
+          var x = document.getElementById("myLinks");
+            x.style.display = "none";
+        }
+        </script>
+    </nav>
+  </header>
+  <script>
+    window.addEventListener('scroll',(e)=>{
+      const nav = document.querySelector('.header');
+      if(window.pageYOffset>0){
+        nav.classList.add("scrolling");
+      } else {
+        nav.classList.remove("scrolling");
+      }
+    });
+  </script>
+  <body>
+    <div class="container">
+      <div class="us">
+        <img src="assets/oasis.png" alt="oasis">
+        <!-- <div class="title">OASIS</div>
+        <div class="subtitle">
+          <div class="web">W e b</div>
+          <div class="agency">A g e n c y</div>
+        </div> -->
+      </div> 
+      <div class="speciality">
+        Agence web spécialisé en développement d’applications Web & Mobile, SEO, Stratégie Digitale, et UX/UI
+      </div>
+      <div class="presentation">
+        <div class="text">
+          <h1>Construisons votre projet digital</h1>
+          <p>
+            Experts en conception et en développement d’applications Web & Mobile.
+            Nous avons à coeur d’atteindre un haut niveau ergonomique et technique,
+            centré sur l'expérience utilisateur et la performance.
+          </p>
+        </div>
+        <div class="image">
+          <img src="assets/smartphone.png" alt="smartphone" />
+        </div>
+      </div>
+      <!-- <div class="confiance">
+        <h1>Ils nous font confiance</h1>
+        <div class="companies">
+          <div class="company">
+            <img class="shine" src="assets/shine.svg" alt="shine">
+          </div>
+          <div class="company">
+            <img class=" legalstart" src="assets/logo-legalstart.png" alt="legalStart">
+          </div>
+          <div class="company">
+            <img class="tricolores" src="assets/tricolores-logo.png" alt="tricolores">
+          </div>
+          <div class="company">
+            <img class="epitech" src="assets/epitech-logo.png" alt="epitech">
+          </div>
+        </div>
+      </div> -->
+      <div class="expertises">
+        <h1>Nos domaines d'expertise</h1>
+        <div class="domaines">
+          <div id="myBtnDesign" onclick="myFunctionDesign()" class="card card-design">
+            <h4>Design</h4>
+            <div class="explanation">
+              Nous proposons une expertise en User Experience (UX) et User Interface (UI). le travail de l’UX est de rendre la navigation fluide et intuitive. Le but final est d’augmenter la performance des pages. L’UI se concentre à l’identité graphique, de la marque<span id="dots-design">.</span><span id="more-design">.<br>
+              <br><span>Des ateliers sont régulièrement réalisés avec le client pour identifier au mieux leurs besoins. Nous produisons des prototypages pour valider l'ergonomie (UX) ainsi que des maquettes graphiques incluant la touche design (UI) conforme à l'identité de la marque.</span></span>
+            </div>
+            <div class="toggle">
+              <label class="switch design">
+                <input  class="input-design"onclick="myFunctionDesign()" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <script>
+            function myFunctionDesign() {
+              var dotsDesign = document.getElementById("dots-design");
+              var moreDesign = document.getElementById("more-design");
+              var cardDesign = document.querySelector('.card-design');
+              var inputDesign = document.querySelector(".input-design");
+
+
+              if (dotsDesign.style.display === "none") {
+                dotsDesign.style.display = "inline";
+                moreDesign.style.display = "none";
+                cardDesign.classList.remove("show-design")
+                inputDesign.checked = false;
+           
+              } else {
+                dotsDesign.style.display = "none";
+                moreDesign.style.display = "inline";
+                cardDesign.classList.add("show-design");
+                inputDesign.checked = true;
+              }
+            }
+          </script>
+          <div id="myBtnDev" onclick="myFunctionDev()" class="card card-dev">
+            <h4>Développement</h4>
+            <div class="explanation">
+              Le développement web et mobile fait appel à diverses compétences, en front-end et également en back-end. Nous vous accompagnons dans la réalisation de tous vos projets grâce à une forte expertise sur les langages de programmation permettant une approche mobile first et hautement scalable<span id="dots-dev">.</span><span id="more-dev"><br><br>. Les technologies que nous utilisons varient selon les projets. Pour les applications mobiles, nous avont recours aux langages natives (Swift, Kotlin) ou hybrides (React Native, Ionic, Flutter) et le framework Symfony ou les technologies Nodejs pour le devéloppement du back-end.<br>
+              <br><span>Pour s'assurer de la qualité de développement, nous réalisons des tests techniques et fonctionnels sur les différentes plateformes pour garantir la compatibilité de votre application sur les divers supports.</span></span>
+            </div>
+            <div class="toggle">
+              <label class="switch dev">
+                <input class="input-dev" onclick="myFunctionDev()" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <script>
+            function myFunctionDev() {
+              var dotsDev = document.getElementById("dots-dev");
+              var moreDev = document.getElementById("more-dev");
+              var cardDev = document.querySelector('.card-dev');
+              var inputDev = document.querySelector(".input-dev");
+
+            
+              if (dotsDev.style.display === "none") {
+                dotsDev.style.display = "inline";
+                moreDev.style.display = "none";
+                cardDev.classList.remove("show-dev");
+                inputDev.checked = false;
+
+   
+              } else {
+                dotsDev.style.display = "none";
+                moreDev.style.display = "inline";
+                cardDev.classList.add("show-dev");
+                inputDev.checked = true;
+              }
+            }
+          </script>
+          <div id="myBtnStrat" onclick="myFunctionStrat()" class="card card-strategy">
+            <h4>Stratégie digitale</h4>
+            <div class="explanation">
+              Pour promouvoir un produit, il faut cibler la bonne audience et ainsi adapter sa communication. Nous vous accompagnons dans la statégie digitale à <span id="dots-strategy">adopter.</span><span id="more-strategy"> adapter, pour optimiser à la fois vos campagnes publicitaires sur le web (SEA) et la visibilité de votre marque (SE0).<br>
+              <br>Les moteurs de recherche sont très exigeants. Autrement dit des lenteurs de chargement ou une anomalie technique impactent votre référencement. Pour performer il est essentiel d'avoir des contenus adaptés, en intégrant des mots en lien avec votre activité.</span> 
+            </div>
+            <div class="toggle">
+              <label class="switch strategy">
+                <input class="input-strategy" onclick="myFunctionStrat()" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <script>
+            function myFunctionStrat() {
+              var dotsStrategy = document.getElementById("dots-strategy");
+              var moreStrategy = document.getElementById("more-strategy");
+              var cardStrategy = document.querySelector('.card-strategy');
+              var inputStrategy = document.querySelector(".input-strategy");
+
+            
+              if (dotsStrategy.style.display === "none") {
+                dotsStrategy.style.display = "inline";
+                moreStrategy.style.display = "none";
+                cardStrategy.classList.remove("show-strategy");
+                inputStrategy.checked = false
+
+              } else {
+                dotsStrategy.style.display = "none";
+                moreStrategy.style.display = "inline";
+                cardStrategy.classList.add("show-strategy");
+                inputStrategy.checked = true
+              }
+            }
+          </script>
+        </div>
+      </div>
+      <div class="realisation">
+        <h1>Nos réalisations</h1>
+        <div class="elements">
+          <div class="first">
+            <a href="references.html">
+              <img  class="vallourec" src="assets/vallourec-smart.webp" alt="vallourec">
+            </a>
+          </div>
+          <div class="next">
+            <a href="references.html">
+              <img  class = "mate" src="assets/mate.jpg" alt="santea">
+            </a>
+            <a href="references.html">
+              <img class = "noublie" src="assets/noublie-jamais.jpg" alt="noublie-jamais">
+            </a>
+          </div>
+        </div>
+        <div class="more-references">
+          <a href="references.html" class="button">Voir plus de réalisations</a>
+        </div>
+      </div>
+      <div class="Contact">
+        <div class="idea">
+          <div class="title">
+            <h1>Nous contacter</h1>
+          </div>
+          <div class="text">
+            <h4>Prêt à lancer votre projet ?</h4>
+            <p>Nous serions ravis d'échanger avec vous sur votre projet afin de vous accompagner au mieux et de bâtir ensemble quelque chose de remarquable !</p>
+            <a href="contact.html" class="button">Nous contacter</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/rocket.png" alt="rocket" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="description">
+      <div class="content">
+        <div class="agency">
+          <div class="title">
+            <a href="index.html">
+              <img class = "oasis-orange" src="assets/oasis-orange.png" alt="oasis">
+            </a>
+          </div>
+          <div class="right">
+            <span class="copyright">Copyright © 2022</span></br>
+            <a class="legales" href="mention.html">Mentions légales</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="title">
+            <span>Contact</a>
+          </div>
+          <div class="adresse">
+            15 rue des Halles </br>
+            75001 PARIS
+          </div>
+          <div class="mail">contact@oasiswebagency.com</div>
+        </div>
+        <div class="propos">
+          <div class="title">À propos</div>
+          <div class="list">
+            <a class="agence" href="agence.html">Agence</a>
+            <a class="references" href="references.html">Références</a>
+            <a class="coordonnees" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="rights">
+          <span class="copyright">Copyright © 2022</span></br>
+          <a class="legales" href="mention.html">Mentions légales</a>
+        </div>
+      </div>
+    <div class="social"></div>
+    </div>
+  </footer>
+</html>
